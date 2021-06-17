@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'FTPopUp'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of FTPopUp.'
+  s.summary          = 'This is use to show or open any view controller as popup controller in swift 5.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -24,9 +24,10 @@ TODO: Add long description of the pod here.
   s.homepage         = 'https://github.com/TusharKumarPandey/FTPopUp'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'TusharKumarPandey' => 'tushar.pandey@srmtechsol.com' }
+  s.author           = { 'TusharKumarPandey' => 'pandeytushar529@gmail.com' }
   s.source           = { :git => 'https://github.com/TusharKumarPandey/FTPopUp.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.swift_version = '5.0'
 
   s.ios.deployment_target = '9.0'
 

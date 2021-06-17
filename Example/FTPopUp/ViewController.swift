@@ -7,7 +7,9 @@
 //
 
 import UIKit
+import FTPopUp
 
+@available(iOS 13.0, *)
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -18,6 +20,17 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    @IBAction func btnOpenPopUpClick(_ sender: UIButton) {
+        let contentVc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "PopUpViewController") as! PopUpViewController
+        let popUpVc = FTPopUpController(contentController: contentVc, popupWidth: 300, popupHeight: 300)
+        present(popUpVc, animated: true)
+        // Note: Some SetUP
+//        popupVC.backgroundAlpha = 0.3
+//        popupVC.backgroundColor = .black
+//        popupVC.canTapOutsideToDismiss = true
+//        popupVC.cornerRadius = 10
+//        popupVC.shadowEnabled = true
     }
 
 }
